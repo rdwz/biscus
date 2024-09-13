@@ -1,0 +1,39 @@
+{
+  "name": "biscus",
+  "type": "module",
+  "version": "0.2.1",
+  "main": "./nuxt.config.ts",
+  "files": [
+    "nuxt.config.ts",
+    "pages",
+    "assets",
+    "plugins",
+    "tailwind.config.ts",
+    "layouts",
+    "components",
+    "app.vue"
+  ],
+  "licence": "MIT",
+  "scripts": {
+    "dev": "nuxi dev .biscus/default",
+    "build": "nuxi build .biscus/default",
+    "generate": "nuxi generate .biscus/default",
+    "preview": "nuxi preview .biscus/default",
+    "prepare": "nuxi prepare && nuxi prepare .biscus/default",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@giscus/vue": "^2.3.0",
+    "@headlessui/vue": "^1.7.16",
+    "@heroicons/vue": "^2.0.18",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "github-markdown-css": "^5.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "eslint": "^8.42.0",
+    "nuxt": "^3.5.2",
+    "typescript": "^5.1.3"
+  }
+}
